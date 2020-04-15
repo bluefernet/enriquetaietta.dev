@@ -12,7 +12,11 @@
       integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
       crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;1,300&family=Girassol&family=Noto+Sans+SC:wght@500;900&family=Roboto+Slab:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="../css/personal.css" />
@@ -38,17 +42,17 @@
             </span>
             <span>About</span>
           </a>
+          <a class="navbar-item" href="#skills">
+            <span class="icon">
+              <i class="fas fa-book"></i>
+            </span>
+            <span>Skills</span>
+          </a>
           <a class="navbar-item" href="#services">
             <span class="icon">
               <i class="fas fa-bars"></i>
             </span>
             <span>Services</span>
-          </a>
-          <a class="navbar-item" href="#resume">
-            <span class="icon">
-              <i class="fas fa-file-alt"></i>
-            </span>
-            <span>Resume</span>
           </a>
           <a class="navbar-item" href="#portfolio">
             <span class="icon">
@@ -56,11 +60,11 @@
             </span>
             <span>Portfolio</span>
           </a>
-          <a class="navbar-item" href="#contact">
+          <a class="navbar-item" href="#resume">
             <span class="icon">
-              <i class="fas fa-envelope"></i>
+              <i class="fas fa-file-alt"></i>
             </span>
-            <span>Contact</span>
+            <span>Resume</span>
           </a>
         </div>
       </div>
@@ -79,128 +83,75 @@
 
     <!-- About -->
     <section class="section" id="about">
-      <!-- Title -->
-      <div class="section-heading">
-        <h3 class="title is-2 has-text-centered	">About Me</h3>
-        <div class="container">
-          <p>
-            Web developer with more than
-            <strong>4 years</strong> of well-rounded experience with a degree in the
-            field of
-            <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for
-            <strong>Coffee</strong>.
-            Looking for an opportunity to work and upgrade, as well as being involved in an organization that
-            believes
-            in gaining a competitive edge and giving back to the community.
-          </p>
-        </div>
-      </div>
-
-      <div class="columns has-same-height is-gapless">
-        <div class="column">
-          <!-- Profile -->
-          <div class="card">
-            <div class="card-content">
-              <h3 class="title is-4 has-text-centered	">Profile</h3>
-
-              <div class="content">
-                <table class="table-profile">
-                  <tr>
-                    <th colspan="1"></th>
-                    <th colspan="2"></th>
-                  </tr>
-                  <tr>
-                    <td>Phone:</td>
-                    <td>
-                      <a href="tel:+393393649790"></a>+39 339 3649790
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <br />
-              <div class="buttons has-addons is-centered">
-                <a href="#" class="button is-link">Github</a>
-                <a href="#" class="button is-link">LinkedIn</a>
-                <a href="#" class="button is-link">Twitter</a>
-              </div>
-            </div>
+      <div class="section">
+        <div class="columns">
+          <div class="column is-2">
+            <h3 class="title is-3">About Me</h3>
           </div>
-        </div>
-        <div class="column">
-          <!-- Profile picture -->
-          <div class="card">
-            <div class="card-image">
-              <figure class="image is-4by3">
-                <img src="https://source.unsplash.com/random/1280x960" alt="Placeholder image" />
-              </figure>
-            </div>
-          </div>
-        </div>
-        <div class="column">
-          <!-- Skills -->
-          <div class="card">
-            <div class="card-content skills-content">
-              <h3 class="title is-4 has-text-centered	">Skills</h3>
-              <div class="content">
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>JavaScript:</strong>
-                        <br />
-                        <progress class="progress is-primary" value="90" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
+          <div>
+            <div class="columns">
+              <div class="column">
+                <!-- Title -->
 
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Vue.js:</strong>
-                        <br />
-                        <progress class="progress is-primary" value="90" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
+                <p>
+                  Web developer with more than
+                  <strong>4 years</strong> of well-rounded experience with a degree in the
+                  field of
+                  <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for
+                  <strong>Coffee</strong>.
+                  Looking for an opportunity to work and upgrade, as well as being involved in an organization that
+                  believes
+                  in gaining a competitive edge and giving back to the community.
+                </p>
 
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Node.js:</strong>
-                        <br />
-                        <progress class="progress is-primary" value="75" max="100"></progress>
-                      </p>
-                    </div>
-                  </div>
-                </article>
+                <!-- Profile -->
+                <div class="card">
+                  <div class="card-content">
+                    <h3 class="title is-4 has-text-centered">Profile</h3>
 
-                <article class="media">
-                  <div class="media-content">
                     <div class="content">
-                      <p>
-                        <strong>HTML5/CSS3</strong>
-                        <br />
-                        <progress class="progress is-primary" value="95" max="100"></progress>
-                      </p>
+                      <table class="table">
+                        <tr>
+                          <th colspan="1"></th>
+                          <th colspan="2"></th>
+                        </tr>
+                        <tr>
+                          <th>Phone:</th>
+                          <td>
+                            <a href="tel:+393393649790"></a>+39 339 3649790
+                          </td>
+                        </tr>
+                        <tr>
+                          <th>Email:</th>
+                          <td>enrique.taietta@posteo.com</td>
+                        </tr>
+                        <tr>
+                          <th>Based:</th>
+                          <td>Verona - Trento</td>
+                        </tr>
+                      </table>
+                    </div>
+                    <br />
+                    <div class="buttons has-addons is-centered">
+                      <a href="#" class="button is-link">Github</a>
+                      <a href="#" class="button is-link">LinkedIn</a>
+                      <a href="#" class="button is-link">Twitter</a>
                     </div>
                   </div>
-                </article>
-
-                <article class="media">
-                  <div class="media-content">
-                    <div class="content">
-                      <p>
-                        <strong>Databases</strong>
-                        <br />
-                        <progress class="progress is-primary" value="66" max="100"></progress>
-                      </p>
-                    </div>
+                </div>
+              </div>
+              <div class="column">
+                <!-- Profile picture -->
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img
+                        src="https://source.unsplash.com/random/1280x960"
+                        alt="Placeholder image"
+                      />
+                    </figure>
                   </div>
-                </article>
+                </div>
               </div>
             </div>
           </div>
@@ -220,103 +171,233 @@
             class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
     </div>-->
 
-    <!-- Services -->
-    <section class="section" id="services">
-      <div class="section-heading">
-        <h3 class="title is-2 has-text-centered	">Services</h3>
-        <h4 class="subtitle is-5">What can I do for you?</h4>
-      </div>
-      <div class="container">
+    <section class="section" id="skills">
+      <div class="section">
         <div class="columns">
-          <div class="column">
-            <div class="box">
-              <div class="content">
-                <h4 class="title is-5">Front End Web Development</h4>Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
-                Vue.js.
+          <!-- Skills -->
+          <div class="column is-2">
+            <h3 class="title is-3">Skills</h3>
+          </div>
+          <div class="column is-10">
+            <p class="title is-4">Languages & Frameworks</p>
+            <div class="columns is-variable is-1">
+              <div class="column has-text-centered is-narrow">
+                <div class="box">JavaScript</div>
+              </div>
+
+              <div class="column has-text-centered is-narrow">
+                <div class="box">Typescript</div>
+              </div>
+
+              <div class="column has-text-centered is-narrow">
+                <p class="box">Python</p>
+              </div>
+
+              <div class="column has-text-centered is-narrow">
+                <p class="box">COBOL</p>
+              </div>
+
+              <div class="column has-text-centered is-narrow">
+                <p class="box">Vue.js</p>
+              </div>
+
+              <div class="column has-text-centered is-narrow">
+                <p class="box">Nuxt.js</p>
               </div>
             </div>
-          </div>
-          <div class="column">
-            <div class="box">
-              <div class="content">
-                <h4 class="title is-5">Back End Web Development</h4>Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+
+            <p class="title is-4">Databases</p>
+            <div class="columns is-variable is-1">
+              <div class="column is-narrow">
+                <p class="box">MongoDB</p>
+              </div>
+              <div class="column is-narrow">
+                <p class="box">DB2</p>
+              </div>
+              <div class="column is-narrow">
+                <p class="box">Oracle</p>
               </div>
             </div>
-          </div>
-                    <div class="column">
-            <div class="box">
-              <div class="content">
-                <h4 class="title is-5">Finance Development</h4>Support development of finance and Bank applications using COBOL and DB2 or Oracle databases.
+
+            <p class="title is-4">Other</p>
+            <div class="columns is-variable is-1">
+              <div class="column is-narrow">
+                <p class="box">ZEIT Now</p>
+              </div>
+
+              <div class="column is-narrow">
+                <p class="box">Bulma</p>
+              </div>
+
+              <div class="column is-narrow">
+                <p class="box">Rest API</p>
+              </div>
+              <div class="column is-narrow">
+                <p class="box">Serverless</p>
+              </div>
+              <div class="column is-narrow">
+                <p class="box">Git</p>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="section">
+        <div class="columns">
+          <div class="column is-2">
+            <h3 class="title is-3">Services</h3>
+          </div>
+          <div class="column is-10">
+            <div class="columns">
+              <div class="column">
+                <div class="box">
+                  <div class="content">
+                    <h4 class="title is-5">Front End Web Development</h4>Develop Front End using latest standards with HTML5/CSS3 with added funtionality using JavaScript and
+                    Vue.js.
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="box">
+                  <div class="content">
+                    <h4 class="title is-5">Back End Web Development</h4>Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="box">
+                  <div class="content">
+                    <h4 class="title is-5">Software for Banks and Finance applications</h4>Support development of finance and Bank applications using COBOL and DB2 or Oracle databases.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Portfolio -->
+    <section class="section" id="portfolio">
+      <div class="section">
+        <div class="columns">
+          <div class="column is-2">
+            <h3 class="title is-3">Portfolio</h3>
+            <h4 class="subtitle is-5">My latest works</h4>
+          </div>
+
+          <div class="column is-10">
+            <div class="columns">
+              <div class="column">
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                      <span>Cards</span>
+                      <span class="is-pulled-right">
+                        <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                          <span class="tag is-default">v0.7.2</span>
+                        </a>
+                        <span class="tag is-default">Desktop</span>
+                        <span class="tag is-default">?</span>
+                      </span>
+                    </p>
+                  </header>
+                  <div class="card-image">
+                    <figure class="image">
+                      <img src="../images/cards.png" alt="Cards template screenshot" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus nec iaculis mauris.
+                      <a>@bulmaio</a>.
+                      <a href="#">#css</a>
+                      <a href="#">#responsive</a>
+                      <br />
+                    </div>
+                  </div>
+                  <footer class="card-footer">
+                    <a href="templates/cards.html" class="card-footer-item">Preview</a>
+                    <a
+                      href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cards.html"
+                      class="card-footer-item"
+                    >
+                      Source
+                      Code
+                    </a>
+                  </footer>
+                </div>
+              </div>
+              <div class="column">
+                <div class="card">
+                  <header class="card-header">
+                    <p class="card-header-title">
+                      <span>Cards</span>
+                      <span class="is-pulled-right">
+                        <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                          <span class="tag is-default">v0.7.2</span>
+                        </a>
+                        <span class="tag is-default">Desktop</span>
+                        <span class="tag is-default">?</span>
+                      </span>
+                    </p>
+                  </header>
+                  <div class="card-image">
+                    <figure class="image">
+                      <img src="../images/cards.png" alt="Cards template screenshot" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <div class="content">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus nec iaculis mauris.
+                      <a>@bulmaio</a>.
+                      <a href="#">#css</a>
+                      <a href="#">#responsive</a>
+                      <br />
+                    </div>
+                  </div>
+                  <footer class="card-footer">
+                    <a href="templates/cards.html" class="card-footer-item">Preview</a>
+                    <a
+                      href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cards.html"
+                      class="card-footer-item"
+                    >
+                      Source
+                      Code
+                    </a>
+                  </footer>
+                </div>
+              </div>
+              <div class="column"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Resume -->
     <section class="section" id="resume">
       <div class="section-heading">
-        <h3 class="title is-2 has-text-centered	">Resume</h3>
-        <h4 class="subtitle is-5 has-text-centered	">More about my past</h4>
+        <h3 class="title is-2 has-text-centered">Resume</h3>
+        <div class="columns is-mobile is-centered">
+          <div class=".is-centered">
+            <a href="#" class="button is-link is-medium">
+              <span class="icon">
+                <i class="fas fa-file-alt"></i>
+              </span>
 
-<div class="columns is-mobile is-centered">
-  <div class=" .is-centered">
-        <a href="#" class="button is-link is-medium ">
-          <span class="icon">
-            <i class="fas fa-file-alt"></i>
-          </span>
-
-          
-          <span>Download My Resume</span>
-        </a>
-    
-  </div>
-</div>
-
-      </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section class="section" id="portfolio">
-      <div class="container">
-        <div class="section-heading">
-          <h3 class="title is-2 has-text-centered	">Portfolio</h3>
-          <h4 class="subtitle is-5">My latest works</h4>
-        </div>
-        <br />
-
-        <div class="container portfolio-container">
-          <div class="columns">
-            <div class="column is-4">
-              <!-- admin -->
-
-              <!-- cards -->
-              <!-- forum -->
-              <!-- insta album -->
-              <!-- landing -->
-            </div>
-            <div class="column is-4">
-              <!-- band -->
-              <!-- cheatsheet -->
-              <!-- hero -->
-              <!--kanban -->
-              <!-- login -->
-            </div>
-            <div class="column is-4">
-              <!-- blog -->
-              <!-- cover -->
-              <!--inbox -->
-              <!--kanban with functional search-->
-              <!--tabs-->
-            </div>
+              <span>Download My Resume</span>
+            </a>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Achievement Level -->
     <!-- <section class="section">
     <nav class="level">
@@ -347,71 +428,8 @@
     </nav>
     </section>-->
 
-    <!-- Contact -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="section-heading">
-          <h3 class="title is-2 has-text-centered	">Contact</h3>
-          <h4 class="subtitle is-5">Get in touch</h4>
-        </div>
-        <br />
-
-        <div class="columns">
-          <div class="column is-6 is-offset-3">
-            <div class="box">
-              <div class="field">
-                <label class="label">Name</label>
-                <div class="control">
-                  <input class="input" type="text" placeholder="Text input" />
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left">
-                  <input class="input" type="email" placeholder="Email input" value />
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                </div>
-              </div>
-
-              <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                  <textarea class="textarea" placeholder="Textarea"></textarea>
-                </div>
-              </div>
-
-              <div class="field is-grouped has-text-centered">
-                <div class="control">
-                  <button class="button is-link is-large">
-                    <span class="icon">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                    <span>Submit</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="footer">
-      <div class="section-heading">
-        <p>
-          <strong>Bulma Personal Template</strong> by
-          <a href="https://mubaidr.js.org">Muhammad Ubaid Raza</a>. The
-          source code is licensed
-          <a
-            href="http://opensource.org/licenses/mit-license.php"
-          >MIT</a>.
-        </p>
-      </div>
-    </footer>
+    <footer class="footer"></footer>
   </body>
 </div>
 </template>
@@ -425,4 +443,14 @@ export default Vue.extend({
 </script>
 
 <style>
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans SC", sans-serif;
+  font-family: "Comic Neue", cursive;
+  font-family: "Girassol", cursive;
+  font-family: "Roboto Slab", serif;
+}
 </style>
