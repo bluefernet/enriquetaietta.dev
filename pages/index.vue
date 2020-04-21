@@ -106,7 +106,7 @@
                   <strong>5 years</strong> of experience and currently student for the degree in
                   <strong>Bioinformatics</strong>, in love with
                   <strong>Wine</strong> and
-                  <strong>Spirits</strong>, self-proclaimed 
+                  <strong>Spirits</strong>, self-proclaimed
                   <strong>Cinephile</strong>.
                   Looking for an opportunity to work and upgrade, i'm also available for software and web consultancy.
                 </p>
@@ -421,6 +421,6 @@ html {
 }
 
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 </style>
