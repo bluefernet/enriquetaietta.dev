@@ -77,7 +77,6 @@
         </div>
       </div>
     </nav>
-
     <!-- Header -->
     <section class="hero is-link is-fullheight is-fullheight-with-navbar">
       <div class="hero-body">
@@ -88,7 +87,6 @@
         </div>
       </div>
     </section>
-
     <!-- About -->
     <section class="section" id="about">
       <div class="section">
