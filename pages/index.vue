@@ -27,15 +27,23 @@
     <!-- Navigation bar -->
     <nav class="navbar is-link is-fixed-top">
       <div class="navbar-brand">
-        <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <div
+          class="navbar-burger burger"
+          data-target="navbarExampleTransparentExample"
+          @click="isOpenNav"
+        >
           <span></span>
           <span></span>
           <span></span>
         </div>
       </div>
 
-      <div id="navbarExampleTransparentExample" class="navbar-menu">
-        <div class="navbar-end">
+      <div
+        id="navbarExampleTransparentExample"
+        class="navbar-menu"
+        :class="{ ['is-active']: isOpen }"
+      >
+        <div class="navbar-end" @click="isOpenNav">
           <a class="navbar-item" href="#about">
             <span class="icon">
               <i class="fas fa-info"></i>
@@ -94,14 +102,13 @@
                 <!-- Title -->
 
                 <p>
-                  Web developer with more than
-                  <strong>4 years</strong> of well-rounded experience with a degree in the
-                  field of
-                  <strong>Computer Science</strong>, extensive knowledge of modern Web techniques and love for
-                  <strong>Coffee</strong>.
-                  Looking for an opportunity to work and upgrade, as well as being involved in an organization that
-                  believes
-                  in gaining a competitive edge and giving back to the community.
+                  I'm a developer with more than
+                  <strong>5 years</strong> of experience and currently student for the degree in
+                  <strong>Bioinformatics</strong>, in love with
+                  <strong>Wine</strong> and
+                  <strong>Spirits</strong>, self-proclaimed 
+                  <strong>Cinephile</strong>.
+                  Looking for an opportunity to work and upgrade, i'm also available for software and web consultancy.
                 </p>
 
                 <!-- Profile -->
@@ -110,32 +117,37 @@
                     <h3 class="title is-4 has-text-centered">Profile</h3>
 
                     <div class="content">
-                      <table class="table">
-                        <tr>
-                          <th colspan="1"></th>
-                          <th colspan="2"></th>
-                        </tr>
-                        <tr>
-                          <th>Phone:</th>
-                          <td>
-                            <a href="tel:+393393649790"></a>+39 339 3649790
-                          </td>
-                        </tr>
-                        <tr>
-                          <th>Email:</th>
-                          <td>enrique.taietta@posteo.com</td>
-                        </tr>
-                        <tr>
-                          <th>Based:</th>
-                          <td>Verona - Trento</td>
-                        </tr>
-                      </table>
+                      <div class="table-container">
+                        <table class="table">
+                          <tr>
+                            <th colspan="1"></th>
+                            <th colspan="2"></th>
+                          </tr>
+                          <!-- tr>
+                            <th>Phone:</th>
+                            <td>
+                              <a href="tel:+393393649790"></a>+39 339 3649790
+                            </td>
+                          </tr!-->
+                          <tr>
+                            <th>Email:</th>
+                            <td>enrique.taietta@gmail.com</td>
+                          </tr>
+                          <tr>
+                            <th>Based:</th>
+                            <td>Verona - Trento</td>
+                          </tr>
+                        </table>
+                      </div>
                     </div>
                     <br />
                     <div class="buttons has-addons is-centered">
-                      <a href="#" class="button is-link">Github</a>
-                      <a href="#" class="button is-link">LinkedIn</a>
-                      <a href="#" class="button is-link">Twitter</a>
+                      <a href="https://github.com/bluefernet" class="button is-link">Github</a>
+                      <a
+                        href="https://linkedin.com/in/enrique-taietta-dev"
+                        class="button is-link"
+                      >LinkedIn</a>
+                      <a href="https://twitter.com/etaioo" class="button is-link">Twitter</a>
                     </div>
                   </div>
                 </div>
@@ -146,7 +158,7 @@
                   <div class="card-image">
                     <figure class="image is-4by3">
                       <img
-                        src="https://source.unsplash.com/random/1280x960"
+                        src="https://source.unsplash.com/collection/9959061/1280x960"
                         alt="Placeholder image"
                       />
                     </figure>
@@ -204,6 +216,9 @@
               <div class="column has-text-centered is-narrow">
                 <p class="box">Nuxt.js</p>
               </div>
+              <div class="column has-text-centered is-narrow">
+                <p class="box">Express.js</p>
+              </div>
             </div>
 
             <p class="title is-4">Databases</p>
@@ -222,7 +237,7 @@
             <p class="title is-4">Other</p>
             <div class="columns is-variable is-1">
               <div class="column is-narrow">
-                <p class="box">ZEIT Now</p>
+                <p class="box">Vercel/ZEIT Now</p>
               </div>
 
               <div class="column is-narrow">
@@ -264,7 +279,7 @@
               <div class="column">
                 <div class="box">
                   <div class="content">
-                    <h4 class="title is-5">Back End Web Development</h4>Develop Back End application/service using Node.js or ASP .NET and SQL server or Mongo DB databases.
+                    <h4 class="title is-5">Back End Web Development</h4>Develop Back End application/service using Node.js and Mongo DB databases.
                   </div>
                 </div>
               </div>
@@ -295,85 +310,25 @@
               <div class="column">
                 <div class="card">
                   <header class="card-header">
-                    <p class="card-header-title">
-                      <span>Cards</span>
-                      <span class="is-pulled-right">
-                        <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                          <span class="tag is-default">v0.7.2</span>
-                        </a>
-                        <span class="tag is-default">Desktop</span>
-                        <span class="tag is-default">?</span>
-                      </span>
-                    </p>
+                    <p class="card-header-title">Happenin</p>
                   </header>
                   <div class="card-image">
-                    <figure class="image">
-                      <img src="../images/cards.png" alt="Cards template screenshot" />
-                    </figure>
+                    <a href="https://www.happenin.it/">
+                      <figure class="image">
+                        <img src="../images/happenin-home.png" alt="happenin home screenshot" />
+                      </figure>
+                    </a>
                   </div>
                   <div class="card-content">
                     <div class="content">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus nec iaculis mauris.
-                      <a>@bulmaio</a>.
-                      <a href="#">#css</a>
-                      <a href="#">#responsive</a>
+                      Happenin is a platform with the purpose of planning crowdfunding music events.
                       <br />
                     </div>
                   </div>
-                  <footer class="card-footer">
-                    <a href="templates/cards.html" class="card-footer-item">Preview</a>
-                    <a
-                      href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cards.html"
-                      class="card-footer-item"
-                    >
-                      Source
-                      Code
-                    </a>
-                  </footer>
                 </div>
               </div>
-              <div class="column">
-                <div class="card">
-                  <header class="card-header">
-                    <p class="card-header-title">
-                      <span>Cards</span>
-                      <span class="is-pulled-right">
-                        <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
-                          <span class="tag is-default">v0.7.2</span>
-                        </a>
-                        <span class="tag is-default">Desktop</span>
-                        <span class="tag is-default">?</span>
-                      </span>
-                    </p>
-                  </header>
-                  <div class="card-image">
-                    <figure class="image">
-                      <img src="../images/cards.png" alt="Cards template screenshot" />
-                    </figure>
-                  </div>
-                  <div class="card-content">
-                    <div class="content">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus nec iaculis mauris.
-                      <a>@bulmaio</a>.
-                      <a href="#">#css</a>
-                      <a href="#">#responsive</a>
-                      <br />
-                    </div>
-                  </div>
-                  <footer class="card-footer">
-                    <a href="templates/cards.html" class="card-footer-item">Preview</a>
-                    <a
-                      href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/cards.html"
-                      class="card-footer-item"
-                    >
-                      Source
-                      Code
-                    </a>
-                  </footer>
-                </div>
-              </div>
+
+              <div class="column"></div>
               <div class="column"></div>
             </div>
           </div>
@@ -387,7 +342,7 @@
         <h3 class="title is-2 has-text-centered">Resume</h3>
         <div class="columns is-mobile is-centered">
           <div class=".is-centered">
-            <a href="#" class="button is-link is-medium">
+            <a href="/CV-ita-EnriqueTaietta.pdf" class="button is-link is-medium">
               <span class="icon">
                 <i class="fas fa-file-alt"></i>
               </span>
@@ -434,12 +389,30 @@
 </div>
 </template>
 
-<script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
-  components: {}
-});
+<script lang="js">
+export default {
+   head () {
+    return {
+//      script: [
+ //       { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' }
+   //   ],
+      link: [
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap' }
+      ]
+    }
+  },
+  data() {
+    return {
+      isOpen: true
+    }
+  },
+  methods: {
+    isOpenNav() {
+      console.log("isOpenNav" + this.isOpen);
+      this.isOpen = !this.isOpen;
+    }
+  }
+};
 </script>
 
 <style>
@@ -448,9 +421,6 @@ html {
 }
 
 body {
-  font-family: "Noto Sans SC", sans-serif;
-  font-family: "Comic Neue", cursive;
-  font-family: "Girassol", cursive;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 </style>
